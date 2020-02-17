@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://www.w3.org/ns/corevocabulary/corelocationvocabulary" 
+	xmlns:cl="http://www.w3.org/ns/corevocabulary/location" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.w3.org/ns/corevocabulary/corelocationvocabulary" 
+	elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+
+
+        <!--  There's no sense in defining AGAIN and EXACTLY the W3C Location vocabulary in the ¡¡¡SAME!!! W3C namespace -->
+        <!--  Especially when ALL THE SEMIC VOCABULARIES import the CoreLocation-v1.00.xsd Vocabulary instead of the Core location vocabulary-v1.0.0.xsd -->
+        <!--  Unless a SEMIC extension or customisation (e.g. an Application Profile is needed for locations, this Core location vocabulary-v1.0.0 should not exist. -->
+
+        <xsd:import namespace="http://www.w3.org/ns/corevocabulary/location" schemaLocation="CoreLocation-v1.00.xsd"/>
+        <!--  By importing the original W3C Location vocabulary you could now "extend" it with new elements... -->
+        <xsd:element name="Location" type="cl:CvlocationType"/>
+        
+	<!-- Original code in version 1.0.0 of the "Core location vocabulary-v1.0.0.xsd follows ... -->
+	
+	<!--
+	<xsd:import namespace="http://www.w3.org/ns/corevocabulary/AggregateComponents" schemaLocation="CoreVocabularyAggregateComponents-v1.00.xsd"/>
+	<xsd:import namespace="http://www.w3.org/ns/corevocabulary/BasicComponents" schemaLocation="CoreVocabularyBasicComponents-v1.00.xsd"/>
+	<xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemaLocation="../common/UBL-CommonBasicComponents-2.0.xsd"/>
+	<xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" schemaLocation="../common/UBL-CommonExtensionComponents-2.0.xsd"/>
+	<xsd:element name="Cvlocation" type="CvlocationType"/>
+	<xsd:complexType name="CvlocationType">
+		<xsd:sequence>
+			<xsd:element ref="ext:UBLExtensions" minOccurs="0"/>
+			<xsd:element ref="cbc:UBLVersionID" minOccurs="0"/>
+			<xsd:element ref="cbc:CustomizationID" minOccurs="0"/>
+			<xsd:element ref="cbc:ProfileID" minOccurs="0"/>
+			<xsd:element ref="cvb:GeographicName" minOccurs="0"/>
+			<xsd:element ref="cvb:GeographicID" minOccurs="0"/>
+			<xsd:element ref="cva:Cvaddress" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="cva:Geometry" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+         -->
+</xsd:schema>
+
+
+
